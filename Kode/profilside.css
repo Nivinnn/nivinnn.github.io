@@ -144,10 +144,10 @@ b {
 
 .profilpage-img1 img {
     position: absolute;
-    bottom: 15%;
-    width: 28%;
+    bottom: 30%;
+    width: 55%;
     height: auto;
-    left: 8%;
+    left: 10%;
     margin: 0;
     padding: 0;
 }
@@ -155,18 +155,18 @@ b {
 .profilpage-img2 {
     grid-area: last;
     background-color: #D9D6D2;
-    width: 720px;
-    height: 400px;
+    width: 700px;
+    height: 60px;
     margin: 0;
     padding: 0;
 }
 
 .profilpage-img2 img {
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     width: 20%;
     height: auto;
-    left: 24%;
+    left: 23%;
     margin: 0;
     padding: 0;
 }
