@@ -133,7 +133,7 @@ b {
 .logo a:active {
     border: none;
     text-decoration: none;
-    color: black;
+    -moz-text-decoration-line: none;;
 }
 
 /* BILLEDER */
