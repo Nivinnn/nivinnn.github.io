@@ -130,7 +130,7 @@ b {
     margin: 1vw 1vw;
 }
 
-.logo a:active {
+a:active {
     border: none;
     text-decoration: none;
     color: black;
