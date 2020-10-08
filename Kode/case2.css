@@ -228,20 +228,6 @@ a:active {
     padding: 0;
 }
 
-/* BILLEDE 4 */
-/*
-.casepage-img4 {
-    grid-area: e;
-    background-color: #D9D6D2;
-    text-align: center;
-    margin: 0vw 7vw 0vw 0vw;
-}
-
-.casepage-img4 img {
-    margin: 4.7vw 0vw 0vw -45vw;
-    width: 11vw;
-    padding: 0;
-}
 
 /* FORTSÆTTELSE AF PROCES */
 
@@ -351,20 +337,6 @@ h4 {
     margin: 7.1vw 2vw;
     width: 11vw;
 }
-
-/*
-.casepage-img9 {
-    grid-area: k;
-    margin: 0vw;
-    padding: 0;
-    background-color: #D9D6D2;
-}
-
-.casepage-img9 img {
-    margin: 5.9vw 0vw;
-    width: 9vw;
-}
-*/
 
 .casepage-img10 {
     grid-area: l;
