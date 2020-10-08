@@ -92,7 +92,7 @@ a:active {
 
 h1 {
     color: black;
-    margin: 1vw 0vw 0vw 1.8vw;
+    margin: 1vw 0vw 0vw 0.5vw;
     padding: 0;
     font-size: 6.5vh;
     text-align: left;
@@ -100,7 +100,7 @@ h1 {
 
 p {
     color: black;
-    margin: 1vw 0vw 0vw 1.8vw;
+    margin: 1vw 0vw 0vw 0.5vw;
     padding: 0;
     font-weight: 200;
     text-align: left;
