@@ -27,7 +27,7 @@ body {
         "main  main main main header header header header"
         "a a a a a b c d"
         "e e e e f f f f"
-        "g g g g h h i i"
+        "g g g g h i j k"
         "footer footer footer footer footer footer footer footer";
     background-color: #F2F2F0;
 }
@@ -131,9 +131,9 @@ a:active {
     font-weight: 200;
 }
 
-/* CASE 3 - DISTRIBUTION PLUS */
+/* CASE 2 - SVALEGAARDEN MEST */
 
-.case3 {
+.case2 {
     grid-area: main;
     background-color: #8C8B88;
     width: 50vw;
@@ -159,7 +159,8 @@ a:active {
     margin: 1vw 1vw;
 }
 
-/* CASE 3 - PROCES */
+
+/* CASE 2 - PROCES */
 
 .casepage-proces {
     grid-area: a;
@@ -181,14 +182,14 @@ a:active {
 .casepage-img1 {
     grid-area: b;
     background-color: #8C8B88;
-    margin: 0vw 0vw 0vw 0vw;
+    margin: 0vw 8vw 0vw -16.7vw;
     text-align: center;
-    padding: 1vw 2vw;
+    padding: 2vw 2vw;
     width: 23.2vw;
 }
 
 .casepage-img1 img {
-    margin: 0.9vw 2.3vw 0vw -2vw;
+    margin: 1vw 2.3vw 0vw -2vw;
     width: 13vw;
     padding: 0;
 }
@@ -199,13 +200,13 @@ a:active {
     grid-area: c;
     background-color: #8C8B88;
     text-align: center;
-    margin: 0vw 0vw 0vw -3.8vw;
+    margin: 0vw 0vw 0vw -13.8vw;
     padding: 1vw 0;
     width: 19.6vw;
 }
 
 .casepage-img2 img {
-    margin: 3vw 5vw 0vw -3vw;
+    margin: 3.4vw 5vw 0vw -3vw;
     width: 12vw;
     padding: 1vw 0vw;
 }
@@ -216,16 +217,17 @@ a:active {
     grid-area: d;
     background-color: #8C8B88;
     text-align: center;
-    margin: 0vw 0vw 0vw -8vw;
+    margin: 0vw 0vw 0vw -19vw;
     padding: 2vw 0vw;
     width: 19vw;
 }
 
 .casepage-img3 img {
-    margin: 3vw 0vw 0vw 0vw;
+    margin: 3.4vw 0vw 0vw 0vw;
     width: 12.5vw;
     padding: 0;
 }
+
 
 /* FORTSÆTTELSE AF PROCES */
 
@@ -240,21 +242,21 @@ a:active {
     font-weight: 200;
     line-height: 1.8;
     font-size: 2.2vh;
-    margin: 5.5vw 0vw;
+    margin: 6vw 0vw;
 }
 
-/* BILLEDE 4 */
+/* BILLEDE 5 */
 
-.casepage-img4 {
+.casepage-img5 {
     grid-area: f;
     margin: 2vw 0vw;
     padding: 0;
 }
 
-.casepage-img4 img {
+.casepage-img5 img {
     margin: 0vw 3vw;
     padding: 0;
-    width: 25vw;
+    width: 12vw;
 }
 
 /* FORTSÆTTELSE AF PROCES */
@@ -264,14 +266,14 @@ a:active {
     background-color: #D9D6D2;
     margin: 0vw;
     padding: 2vw 2vw 0vw 3vw;
-    height: 28vw;
+    height: 42vw;
 }
 
 .casepage-proces3 p {
     font-weight: 200;
     line-height: 1.8;
     font-size: 2.2vh;
-    margin: 6.5vw 0vw;
+    margin: 14vw 0vw;
 }
 
 /* OVERSKRIFTER - PROCES */
@@ -285,7 +287,7 @@ h4 {
 }
 
 .casepage-img1 h4 {
-    margin: 1.5vw 6vw 0vw -2vw;
+    margin: 1vw 6vw 0vw -2vw;
 }
 
 /* BILLEDER - MOCK-UP */
@@ -295,13 +297,13 @@ h4 {
     margin: 0vw;
     padding: 0;
     background-color: #8C8B88;
-    width: 100%;
-    height: 28vw;
+    width: 16.7vw;
+    height: 42vw;
 }
 
 .casepage-img6 img {
     margin: 0vw 3vw;
-    width: 17vw;
+    width: 11vw;
 }
 
 .casepage-img6 h4 {
@@ -313,16 +315,41 @@ h4 {
     margin: 0vw 0vw;
     padding: 0;
     background-color: #8C8B88;
-    width: 100%;
-    height: 28vw;
+    width: 16.7vw;
+    height: 42vw;
 }
 
 .casepage-img7 img {
-    margin: 5.5vw -2vw;
-    width: 28vw;
+    margin: 7.1vw 1.5vw;
+    width: 11vw;
 }
 
+.casepage-img8 {
+    grid-area: j;
+    margin: 0vw 0vw 0vw 0vw;
+    padding: 0;
+    background-color: #8C8B88;
+    width: 16.7vw;
+    height: 42vw;
+}
 
+.casepage-img8 img {
+    margin: 7.1vw 2vw;
+    width: 11vw;
+}
+
+.casepage-img10 {
+    grid-area: l;
+    margin: 0vw 7vw 0vw -1vw;
+    padding: 0;
+    background-color: #D9D6D2;
+    height: 55vw;
+}
+
+.casepage-img10 img {
+    margin: 6.1vw 0vw 0vw -6vw;
+    width: 9vw;
+}
 
 /* FOOTER */
 

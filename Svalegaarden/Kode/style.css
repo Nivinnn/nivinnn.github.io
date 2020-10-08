@@ -118,6 +118,11 @@ p {
     margin: 1vw 1vw;
 }
 
+.logo a:active {
+    border: none;
+    text-decoration: none;
+}
+
 /* BILLEDE */
 
 .frontpage-img {

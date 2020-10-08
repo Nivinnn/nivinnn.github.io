@@ -21,14 +21,14 @@ body {
 
 .gridcontainer {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "main  main main main header header header header"
-        "a a a a a b c d"
-        "e e e e f f f f"
-        "g g g g h h i i"
-        "footer footer footer footer footer footer footer footer";
+        "main main header header"
+        "a a b c"
+        "e e f f"
+        "g g h h"
+        "footer footer footer footer";
     background-color: #F2F2F0;
 }
 
@@ -114,7 +114,7 @@ a:active {
 /* TEKST - PROBLEM */
 
 .casepage-problem {
-    margin: 4vw 5vw 0vw 7vw;
+    margin: 3vw 5vw 0vw 7vw;
     padding: 0;
 }
 
@@ -131,9 +131,9 @@ a:active {
     font-weight: 200;
 }
 
-/* CASE 3 - DISTRIBUTION PLUS */
+/* CASE 1 - DIABETETSFORENINGEN */
 
-.case3 {
+.case1 {
     grid-area: main;
     background-color: #8C8B88;
     width: 50vw;
@@ -141,10 +141,25 @@ a:active {
 }
 
 #case {
-    width: 36vw;
-    height: 28vw;
+    width: 15vw;
+    height: 30vw;
     position: absolute;
-    margin: 11vw 0vw 0vw 7vw;
+    margin: 10vw 0vw 0vw 17vw;
+}
+
+.casepage-proces {
+    grid-area: a;
+    background-color: #D9D6D2;
+    padding: 2vw 2vw 0vw 3vw;
+    margin: 0vw;
+    line-height: 1.5;
+}
+
+.casepage-proces p {
+    font-weight: 200;
+    line-height: 1.8;
+    font-size: 2.2vh;
+    margin: 2vw 0vw;
 }
 
 /* LOGO */
@@ -159,170 +174,94 @@ a:active {
     margin: 1vw 1vw;
 }
 
-/* CASE 3 - PROCES */
-
-.casepage-proces {
-    grid-area: a;
-    background-color: #D9D6D2;
-    padding: 2vw 2vw 0vw 3vw;
-    margin: 0vw;
-    line-height: 1.5;
-    width: 50vw;
-}
-
-.casepage-proces p {
-    font-weight: 200;
-    line-height: 1.8;
-    font-size: 2.2vh;
-}
-
-/* BILLEDE 1 */
-
 .casepage-img1 {
     grid-area: b;
     background-color: #8C8B88;
-    margin: 0vw 0vw 0vw 0vw;
-    text-align: center;
-    padding: 1vw 2vw;
-    width: 23.2vw;
+    margin: 0vw;
+    padding: 2vw 0vw;
 }
 
 .casepage-img1 img {
-    margin: 0.9vw 2.3vw 0vw -2vw;
-    width: 13vw;
-    padding: 0;
+    margin: 0vw 1.5vw;
+    width: 22vw;
 }
-
-/* BILLEDE 2*/
 
 .casepage-img2 {
     grid-area: c;
     background-color: #8C8B88;
-    text-align: center;
-    margin: 0vw 0vw 0vw -3.8vw;
-    padding: 1vw 0;
-    width: 19.6vw;
+    padding: 3vw 0vw;
+    margin: 0vw;
 }
 
 .casepage-img2 img {
-    margin: 3vw 5vw 0vw -3vw;
-    width: 12vw;
-    padding: 1vw 0vw;
+    margin: 2.5vw 0vw 0vw 1vw;
+    width: 22vw;
 }
-
-/* BILLEDE 3 */
 
 .casepage-img3 {
     grid-area: d;
-    background-color: #8C8B88;
-    text-align: center;
-    margin: 0vw 0vw 0vw -8vw;
-    padding: 2vw 0vw;
-    width: 19vw;
 }
-
-.casepage-img3 img {
-    margin: 3vw 0vw 0vw 0vw;
-    width: 12.5vw;
-    padding: 0;
-}
-
-/* FORTSÆTTELSE AF PROCES */
 
 .casepage-proces2 {
     grid-area: e;
     background-color: #8C8B88;
     margin: 0vw;
-    padding: 2vw 3vw 0vw 3vw;
+    padding: 4vw 3vw 4vw 3vw;
 }
 
 .casepage-proces2 p {
     font-weight: 200;
     line-height: 1.8;
     font-size: 2.2vh;
-    margin: 5.5vw 0vw;
 }
 
-/* BILLEDE 4 */
-
-.casepage-img4 {
+.casepage-img3 {
     grid-area: f;
-    margin: 2vw 0vw;
-    padding: 0;
+    background-color: #D9D6D2;
+    margin: 0vw;
+    padding: 3vw 0vw 4vw 0vw;
 }
 
-.casepage-img4 img {
-    margin: 0vw 3vw;
-    padding: 0;
-    width: 25vw;
+.casepage-img3 img {
+    margin: 0vw 1.5vw;
+    width: 30vw;
 }
-
-/* FORTSÆTTELSE AF PROCES */
 
 .casepage-proces3 {
     grid-area: g;
     background-color: #D9D6D2;
-    margin: 0vw;
-    padding: 2vw 2vw 0vw 3vw;
-    height: 28vw;
+    margin: 0vw 0vw;
+    padding: 3vw 3vw 3vw 3vw;
 }
 
 .casepage-proces3 p {
     font-weight: 200;
     line-height: 1.8;
     font-size: 2.2vh;
-    margin: 6.5vw 0vw;
+    margin: 6vw 0vw;
 }
 
-/* OVERSKRIFTER - PROCES */
+.casepage-img4 {
+    grid-area: h;
+    background-color: #8C8B88;
+    margin: 0vw 0vw;
+    padding: 1vw 0vw 2vw 0vw;
+}
+
+
+.casepage-img4 img {
+    margin: 0vw 1.5vw;
+    padding: 0;
+    width: 30vw;
+}
 
 h3 {
-    margin: 5vw 0vw 1vw 0vw;
+    margin: 2vw 0vw 1vw 0vw;
 }
 
 h4 {
-    margin: 1vw 0vw 1vw 3vw;
+    margin: 1vw 0vw 1vw 1.5vw;
 }
-
-.casepage-img1 h4 {
-    margin: 1.5vw 6vw 0vw -2vw;
-}
-
-/* BILLEDER - MOCK-UP */
-
-.casepage-img6 {
-    grid-area: h;
-    margin: 0vw;
-    padding: 0;
-    background-color: #8C8B88;
-    width: 100%;
-    height: 28vw;
-}
-
-.casepage-img6 img {
-    margin: 0vw 3vw;
-    width: 17vw;
-}
-
-.casepage-img6 h4 {
-    margin: 3vw 0vw 1vw 3vw;
-}
-
-.casepage-img7 {
-    grid-area: i;
-    margin: 0vw 0vw;
-    padding: 0;
-    background-color: #8C8B88;
-    width: 100%;
-    height: 28vw;
-}
-
-.casepage-img7 img {
-    margin: 5.5vw -2vw;
-    width: 28vw;
-}
-
-
 
 /* FOOTER */
 
