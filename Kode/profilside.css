@@ -130,7 +130,7 @@ b {
     margin: 1vw 1vw;
 }
 
-.box a:active {
+.logo a:active {
     border: none;
     text-decoration: none;
 }
