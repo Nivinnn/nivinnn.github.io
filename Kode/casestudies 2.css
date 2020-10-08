@@ -1,0 +1,275 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* GRID */
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main header" "middle header" "last header" "footer footer";
+    background-color: #F2F2F0;
+}
+
+/*HEADER - NAVIGATION*/
+
+.casepage {
+    grid-area: header;
+}
+
+nav {
+    width: 100%;
+    align-content: center;
+    height: 100%;
+}
+
+div nav {
+    width: 100%;
+    height: 100px;
+}
+
+.navbar {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    text-align: center;
+    margin: 0vw -1vw;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0vw 3vw 0vw 0vw;
+    line-height: 5;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+nav a:hover {
+    border-bottom: solid 3px;
+    cursor: pointer;
+}
+
+nav a:visited {
+    border-bottom: solid 3px;
+}
+
+
+a:active {
+    border-bottom: solid 3px;
+    border: none;
+    text-decoration: none;
+}
+
+/* OVERSKRIFT OG TEKST */
+
+.casepage-text {
+    margin: 0vw 10vw 0vw 0vw;
+}
+
+h1 {
+    color: black;
+    margin: 15vw 0vw 0vw 8vw;
+    padding: 0;
+    font-size: 6.5vh;
+    text-align: left;
+}
+
+p {
+    color: black;
+    margin: 0vw 0vw 0vw 8.3vw;
+    padding: 0;
+    font-size: 2.5vh;
+    font-weight: 200;
+    text-align: left;
+}
+
+/* PIL */
+
+#arrow {
+    position: absolute;
+    top: 70vw;
+
+}
+
+.fa.fa-chevron-down {
+    margin: 0vw 8vw;
+    font-size: 8vh;
+    color: black;
+}
+
+/* LOGO */
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 5vw;
+    margin: 1vw 1vw;
+}
+
+/* CASE 1 - DIABETESFORENINGEN */
+
+.case1 {
+    grid-area: main;
+    background-color: #8C8B88;
+    width: 50vw;
+    height: 27vw;
+}
+
+#case1 {
+    width: 6vw;
+    height: 11vw;
+    position: absolute;
+    margin: 5.5vw 0vw 0vw 21vw;
+}
+
+/* KNAP 1 */
+
+.case1-button1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.case1-button1 {
+    text-align: center;
+    background-color: #bc9b8f;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2vh;
+    color: black;
+    margin: 13vw 0vw 0vw 17.9vw;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 0.5vw;
+    font-weight: 400;
+    outline: none;
+}
+
+.case1-button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.907), 0 17px 50px 0 rgba(0, 0, 0, 0.838);
+    background-color: #bc9b8f;
+    outline: none;
+}
+
+.case1-button1:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    outline: none;
+}
+
+/* CASE 2 - SVALEGAARDEN MEST */
+
+.case2 {
+    grid-area: last;
+    background-color: #D9D6D2;
+    width: 50vw;
+    height: 27vw;
+}
+
+#case2 {
+    width: 16vw;
+    height: 12vw;
+    position: absolute;
+    margin: 8vw 0vw 0vw 17vw;
+}
+
+/* KNAP 2 */
+
+.case2-button2 {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.case2-button2 {
+    text-align: center;
+    background-color: #bc9b8f;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2vh;
+    color: black;
+    margin: 14vw 0vw 0vw 18.7vw;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 0.5vw;
+    font-weight: 400;
+    outline: none;
+}
+
+.case2-button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.907), 0 17px 50px 0 rgba(0, 0, 0, 0.838);
+    background-color: #bc9b8f;
+}
+
+.case2-button2:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.case3 {
+    grid-area: last;
+    background-color: #8C8B88;
+    width: 50vw;
+    height: 27vw;
+}
+
+/* OVERSKRIFTER - DE TO CASES */
+
+h2 {
+    margin: 0;
+    padding: 2vw 0vw 0vw 0vw;
+    font-size: 4vh;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 4vh;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    background-color: #bc9b8f;
+}
+
+.footer p {
+    font-size: 2vh;
+    padding: 2vw 2vw 2vw 4vw;
+    margin: 0;
+    font-weight: 200;
+}

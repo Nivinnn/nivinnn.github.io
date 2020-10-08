@@ -1,0 +1,278 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    font-size: 2vh;
+}
+
+/* GRID */
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "main main header header"
+        "a a b c"
+        "e e f f"
+        "g g h h"
+        "footer footer footer footer";
+    background-color: #F2F2F0;
+}
+
+/*HEADER - NAVIGATION*/
+
+.casepage {
+    grid-area: header;
+    width: 50vw;
+    height: 54vw;
+}
+
+nav {
+    width: 100vw;
+    align-content: center;
+    height: 100vw;
+}
+
+div nav {
+    width: 51vw;
+    height: 8vw;
+}
+
+.navbar {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    text-align: center;
+    margin: 0vw -1vw;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0vw 3vw 0vw 0vw;
+    line-height: 5;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+nav a:hover {
+    border-bottom: solid 3px;
+    cursor: pointer;
+}
+
+nav a:visited {
+    border-bottom: solid 3px;
+}
+
+a:active {
+    border-bottom: solid 3px;
+}
+
+/* OVERSKRIFT OG TEKST */
+
+.casepage-text {
+    margin: 0vw 5vw 0vw 7vw;
+}
+
+.casepage-text h1 {
+    font-size: 6.5vh;
+    margin: 0;
+    padding: 0;
+}
+
+.casepage-text h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vh;
+    font-weight: 400;
+}
+
+.casepage-text h4 {
+    font-size: 3.5vh;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+/* TEKST - PROBLEM */
+
+.casepage-problem {
+    margin: 3vw 5vw 0vw 7vw;
+    padding: 0;
+}
+
+.casepage-problem h3 {
+    margin: 0vw 0vw 1vw 0vw;
+    line-height: 1.5;
+    font-size: 2.4vh;
+}
+
+.casepage-problem p {
+    margin: 0vw 0vw 1vw 0vw;
+    line-height: 1.7;
+    font-size: 2.4vh;
+    font-weight: 200;
+}
+
+/* CASE 1 - DIABETETSFORENINGEN */
+
+.case1 {
+    grid-area: main;
+    background-color: #8C8B88;
+    width: 50vw;
+    height: 54vw;
+}
+
+#case {
+    width: 15vw;
+    height: 30vw;
+    position: absolute;
+    margin: 10vw 0vw 0vw 17vw;
+}
+
+.casepage-proces {
+    grid-area: a;
+    background-color: #D9D6D2;
+    padding: 2vw 2vw 0vw 3vw;
+    margin: 0vw;
+    line-height: 1.5;
+}
+
+.casepage-proces p {
+    font-weight: 200;
+    line-height: 1.8;
+    font-size: 2.2vh;
+    margin: 2vw 0vw;
+}
+
+/* LOGO */
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 5vw;
+    margin: 1vw 1vw;
+}
+
+.casepage-img1 {
+    grid-area: b;
+    background-color: #8C8B88;
+    margin: 0vw;
+    padding: 2vw 0vw;
+}
+
+.casepage-img1 img {
+    margin: 0vw 1.5vw;
+    width: 22vw;
+}
+
+.casepage-img2 {
+    grid-area: c;
+    background-color: #8C8B88;
+    padding: 3vw 0vw;
+    margin: 0vw;
+}
+
+.casepage-img2 img {
+    margin: 2.5vw 0vw 0vw 1vw;
+    width: 22vw;
+}
+
+.casepage-img3 {
+    grid-area: d;
+}
+
+.casepage-proces2 {
+    grid-area: e;
+    background-color: #8C8B88;
+    margin: 0vw;
+    padding: 4vw 3vw 4vw 3vw;
+}
+
+.casepage-proces2 p {
+    font-weight: 200;
+    line-height: 1.8;
+    font-size: 2.2vh;
+}
+
+.casepage-img3 {
+    grid-area: f;
+    background-color: #D9D6D2;
+    margin: 0vw;
+    padding: 3vw 0vw 4vw 0vw;
+}
+
+.casepage-img3 img {
+    margin: 0vw 1.5vw;
+    width: 30vw;
+}
+
+.casepage-proces3 {
+    grid-area: g;
+    background-color: #D9D6D2;
+    margin: 0vw 0vw;
+    padding: 3vw 3vw 3vw 3vw;
+}
+
+.casepage-proces3 p {
+    font-weight: 200;
+    line-height: 1.8;
+    font-size: 2.2vh;
+    margin: 6vw 0vw;
+}
+
+.casepage-img4 {
+    grid-area: h;
+    background-color: #8C8B88;
+    margin: 0vw 0vw;
+    padding: 1vw 0vw 2vw 0vw;
+}
+
+
+.casepage-img4 img {
+    margin: 0vw 1.5vw;
+    padding: 0;
+    width: 30vw;
+}
+
+h3 {
+    margin: 2vw 0vw 1vw 0vw;
+}
+
+h4 {
+    margin: 1vw 0vw 1vw 1.5vw;
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    background-color: #bc9b8f;
+}
+
+.footer p {
+    font-size: 2vh;
+    padding: 2vw 2vw 2vw 4vw;
+    margin: 0;
+    font-weight: 200;
+}

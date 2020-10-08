@@ -1,0 +1,394 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    font-size: 2vh;
+}
+
+/* GRID */
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "main  main main main header header header header"
+        "a a a a a b c d"
+        "e e e e f f f f"
+        "g g g g h i j k"
+        "footer footer footer footer footer footer footer footer";
+    background-color: #F2F2F0;
+}
+
+/*HEADER - NAVIGATION*/
+
+.casepage {
+    grid-area: header;
+    width: 50vw;
+    height: 54vw;
+}
+
+nav {
+    width: 100vw;
+    align-content: center;
+    height: 100vw;
+}
+
+div nav {
+    width: 51vw;
+    height: 8vw;
+}
+
+.navbar {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    text-align: center;
+    margin: 0vw -1vw;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0vw 3vw 0vw 0vw;
+    line-height: 5;
+    font-size: 2vh;
+    font-weight: 700;
+}
+
+nav a:hover {
+    border-bottom: solid 3px;
+    cursor: pointer;
+}
+
+nav a:visited {
+    border-bottom: solid 3px;
+}
+
+a:active {
+    border-bottom: solid 3px;
+}
+
+/* OVERSKRIFT OG TEKST */
+
+.casepage-text {
+    margin: 0vw 5vw 0vw 7vw;
+}
+
+.casepage-text h1 {
+    font-size: 6.5vh;
+    margin: 0;
+    padding: 0;
+}
+
+.casepage-text h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vh;
+    font-weight: 400;
+}
+
+.casepage-text h4 {
+    font-size: 3.5vh;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+/* TEKST - PROBLEM */
+
+.casepage-problem {
+    margin: 4vw 5vw 0vw 7vw;
+    padding: 0;
+}
+
+.casepage-problem h3 {
+    margin: 0vw 0vw 1vw 0vw;
+    line-height: 1.5;
+    font-size: 2.4vh;
+}
+
+.casepage-problem p {
+    margin: 0vw 0vw 1vw 0vw;
+    line-height: 1.7;
+    font-size: 2.4vh;
+    font-weight: 200;
+}
+
+/* CASE 2 - SVALEGAARDEN MEST */
+
+.case2 {
+    grid-area: main;
+    background-color: #8C8B88;
+    width: 50vw;
+    height: 54vw;
+}
+
+#case {
+    width: 36vw;
+    height: 28vw;
+    position: absolute;
+    margin: 11vw 0vw 0vw 7vw;
+}
+
+/* LOGO */
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 5vw;
+    margin: 1vw 1vw;
+}
+
+
+/* CASE 2 - PROCES */
+
+.casepage-proces {
+    grid-area: a;
+    background-color: #D9D6D2;
+    padding: 2vw 2vw 0vw 3vw;
+    margin: 0vw;
+    line-height: 1.5;
+    width: 50vw;
+}
+
+.casepage-proces p {
+    font-weight: 200;
+    line-height: 1.8;
+    font-size: 2.2vh;
+}
+
+/* BILLEDE 1 */
+
+.casepage-img1 {
+    grid-area: b;
+    background-color: #8C8B88;
+    margin: 0vw 8vw 0vw -16.7vw;
+    text-align: center;
+    padding: 2vw 2vw;
+    width: 23.2vw;
+}
+
+.casepage-img1 img {
+    margin: 1vw 2.3vw 0vw -2vw;
+    width: 13vw;
+    padding: 0;
+}
+
+/* BILLEDE 2*/
+
+.casepage-img2 {
+    grid-area: c;
+    background-color: #8C8B88;
+    text-align: center;
+    margin: 0vw 0vw 0vw -13.8vw;
+    padding: 1vw 0;
+    width: 19.6vw;
+}
+
+.casepage-img2 img {
+    margin: 3.4vw 5vw 0vw -3vw;
+    width: 12vw;
+    padding: 1vw 0vw;
+}
+
+/* BILLEDE 3 */
+
+.casepage-img3 {
+    grid-area: d;
+    background-color: #8C8B88;
+    text-align: center;
+    margin: 0vw 0vw 0vw -19vw;
+    padding: 2vw 0vw;
+    width: 19vw;
+}
+
+.casepage-img3 img {
+    margin: 3.4vw 0vw 0vw 0vw;
+    width: 12.5vw;
+    padding: 0;
+}
+
+/* BILLEDE 4 */
+/*
+.casepage-img4 {
+    grid-area: e;
+    background-color: #D9D6D2;
+    text-align: center;
+    margin: 0vw 7vw 0vw 0vw;
+}
+
+.casepage-img4 img {
+    margin: 4.7vw 0vw 0vw -45vw;
+    width: 11vw;
+    padding: 0;
+}
+
+/* FORTSÆTTELSE AF PROCES */
+
+.casepage-proces2 {
+    grid-area: e;
+    background-color: #8C8B88;
+    margin: 0vw;
+    padding: 2vw 3vw 0vw 3vw;
+}
+
+.casepage-proces2 p {
+    font-weight: 200;
+    line-height: 1.8;
+    font-size: 2.2vh;
+    margin: 6vw 0vw;
+}
+
+/* BILLEDE 5 */
+
+.casepage-img5 {
+    grid-area: f;
+    margin: 2vw 0vw;
+    padding: 0;
+}
+
+.casepage-img5 img {
+    margin: 0vw 3vw;
+    padding: 0;
+    width: 12vw;
+}
+
+/* FORTSÆTTELSE AF PROCES */
+
+.casepage-proces3 {
+    grid-area: g;
+    background-color: #D9D6D2;
+    margin: 0vw;
+    padding: 2vw 2vw 0vw 3vw;
+    height: 42vw;
+}
+
+.casepage-proces3 p {
+    font-weight: 200;
+    line-height: 1.8;
+    font-size: 2.2vh;
+    margin: 14vw 0vw;
+}
+
+/* OVERSKRIFTER - PROCES */
+
+h3 {
+    margin: 5vw 0vw 1vw 0vw;
+}
+
+h4 {
+    margin: 1vw 0vw 1vw 3vw;
+}
+
+.casepage-img1 h4 {
+    margin: 1vw 6vw 0vw -2vw;
+}
+
+/* BILLEDER - MOCK-UP */
+
+.casepage-img6 {
+    grid-area: h;
+    margin: 0vw;
+    padding: 0;
+    background-color: #8C8B88;
+    width: 16.7vw;
+    height: 42vw;
+}
+
+.casepage-img6 img {
+    margin: 0vw 3vw;
+    width: 11vw;
+}
+
+.casepage-img6 h4 {
+    margin: 3vw 0vw 1vw 3vw;
+}
+
+.casepage-img7 {
+    grid-area: i;
+    margin: 0vw 0vw;
+    padding: 0;
+    background-color: #8C8B88;
+    width: 16.7vw;
+    height: 42vw;
+}
+
+.casepage-img7 img {
+    margin: 7.1vw 1.5vw;
+    width: 11vw;
+}
+
+.casepage-img8 {
+    grid-area: j;
+    margin: 0vw 0vw 0vw 0vw;
+    padding: 0;
+    background-color: #8C8B88;
+    width: 16.7vw;
+    height: 42vw;
+}
+
+.casepage-img8 img {
+    margin: 7.1vw 2vw;
+    width: 11vw;
+}
+
+/*
+.casepage-img9 {
+    grid-area: k;
+    margin: 0vw;
+    padding: 0;
+    background-color: #D9D6D2;
+}
+
+.casepage-img9 img {
+    margin: 5.9vw 0vw;
+    width: 9vw;
+}
+*/
+
+.casepage-img10 {
+    grid-area: l;
+    margin: 0vw 7vw 0vw -1vw;
+    padding: 0;
+    background-color: #D9D6D2;
+    height: 55vw;
+}
+
+.casepage-img10 img {
+    margin: 6.1vw 0vw 0vw -6vw;
+    width: 9vw;
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    background-color: #bc9b8f;
+}
+
+.footer p {
+    font-size: 2vh;
+    padding: 2vw 2vw 2vw 4vw;
+    margin: 0;
+    font-weight: 200;
+}
