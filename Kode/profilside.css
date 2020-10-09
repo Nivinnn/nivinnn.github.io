@@ -163,11 +163,11 @@ b {
 }
 
 .profilpage-img2 img {
-    position: relative;
-    bottom: 80%;
-    width: 40%;
+    position: absolute;
+    bottom: 6%;
+    width: 20%;
     height: auto;
-    left: 48%;
+    left: 24%;
     margin: 0;
     padding: 0;
 }
